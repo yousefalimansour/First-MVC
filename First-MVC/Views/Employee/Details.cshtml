@@ -1,0 +1,25 @@
+﻿@using First_MVC.Models.Entities
+@model Employee
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<h2>@Model.Name</h2>
+<h1 style="color:@ViewBag.Color">@ViewData["Msg"]</h1>
+<h2>@ViewData["Temp"]</h2>
+<h2></h2>
+<select class="form form-control">
+    @foreach (var item in (List<string>)ViewData["Branches"])
+    {
+        <option>@item</option>
+    }
+</select>
+<hr />
+<select class="form form-control">
+    @foreach (var item in ViewBag.Branches)
+    {
+        <option>@item</option>
+    }
+</select>

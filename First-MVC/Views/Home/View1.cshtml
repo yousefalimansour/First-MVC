@@ -1,0 +1,32 @@
+﻿<h1>Hellow World From First View</h1>
+<style>
+    h1 { 
+        color: rebeccapurple
+    }
+</style>
+<script>
+    console.log("Hello JS")
+</script>
+
+<!--Block Code-->
+@{
+    int x = 4;
+    int y = x + 10;
+}
+<!--Inline Statment-->
+<h2>@y</h2>
+<!--Condition Statment-->
+@if (x > y)
+{
+    <h2>x greater than y</h2>
+}
+else
+{
+    <h2>y greater than x</h2>
+}
+<!--Looping Statment-->
+@for(int i = 0; i < x; i++)
+{
+   <li>@i</li> 
+}
+
